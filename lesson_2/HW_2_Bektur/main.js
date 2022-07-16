@@ -13,18 +13,22 @@ const move = ()=>{
         positionX += 16
         block.style.left = `${positionX}px`
         setTimeout(move, 100)
+        block.style.backgroundColor = "black"
     }else if(positionX >= 440 && positionY <= 440){
         positionY += 16
         block.style.top = `${positionY}px`
         setTimeout(move, 100)
+        block.style.backgroundColor = "green"
     }else if(positionY >= 440 && positionX != 0){
         positionX -= 16
         block.style.left = `${positionX}px`
         setTimeout(move, 100)
+        block.style.backgroundColor = "red"
     }else if (positionX == 0 && positionY != 0){
         positionY -=16
         block.style.top = `${positionY}px`
         setTimeout(move,100)
+        block.style.backgroundColor = "blue"
     }
 }
 move()
