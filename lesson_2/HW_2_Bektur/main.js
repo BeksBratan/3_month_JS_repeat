@@ -30,6 +30,7 @@ const move = ()=>{
         setTimeout(move,100)
         block.style.backgroundColor = "blue"
     }
+
 }
 move()
 
